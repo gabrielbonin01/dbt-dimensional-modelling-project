@@ -3,8 +3,6 @@ version: 2
 models:
   - name: stg_customer
     description: "This template will only be used to test advanced configurations like Alias, schema and database."
-  - name: stg_date
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
   - name: stg_employee_privileges
     description: "This template will only be used to test advanced configurations like Alias, schema and database."
   - name: stg_employees
