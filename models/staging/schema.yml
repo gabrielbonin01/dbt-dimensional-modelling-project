@@ -1,0 +1,73 @@
+version: 2
+
+models:
+  - name: stg_customer
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: stg_date
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: stg_employee_privileges
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: stg_employees
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: stg_inventory_transaction_types
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: stg_inventory_transactions
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: stg_invoices
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: stg_order_details
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: stg_order_details_status
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: stg_orders
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: stg_orders_status
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: stg_orders_tax_status
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: privileges
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: products
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: purchase_order_details
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: purchase_order_status
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: purchase_orders
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: sales_reports
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: shippers
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: strings
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+  - name: suppliers
+    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+
+
+sources:
+  - name: datalake
+    database: "DL_NORTHWIND"
+    schema: "DATA_LAKE"
+    tables:
+      - name: customer
+      - name: date
+      - name: employee_privileges
+      - name: employees
+      - name: inventory_transaction_types
+      - name: inventory_transactions
+      - name: invoices
+      - name: order_details
+      - name: order_details_status
+      - name: orders
+      - name: orders_status
+      - name: orders_tax_status
+      - name: privileges
+      - name: products
+      - name: purchase_order_details
+      - name: purchase_order_status
+      - name: purchase_orders
+      - name: sales_reports
+      - name: shippers
+      - name: strings
+      - name: suppliers
