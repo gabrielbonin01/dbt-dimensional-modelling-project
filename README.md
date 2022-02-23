@@ -62,3 +62,12 @@
 <li><a href="https://docs.getdbt.com/docs/running-a-dbt-project/running-dbt-in-production">Scheduled jobs</a> to use dbt in production via dbt cloud</li>
 
 
+<h3>Other advanced DBT Feature</h3>
+
+<li> Using <a href="https://docs.getdbt.com/docs/building-a-dbt-project/using-sources">Source</a> to simplify the code and reference them in my models</li>
+
+<li>Creating multiple <a href="https://docs.getdbt.com/docs/building-a-dbt-project/jinja-macros">Macros</a> to avoid repetition and reuse code more easily</li>
+
+<li>Creating a dev and production environment to be able to separate my code if I work in a team</li>
+
+<li>Using <a href="https://docs.getdbt.com/docs/guides/best-practices#break-complex-models-up-into-smaller-pieces">Common table expressions (CTE)</a></li>
