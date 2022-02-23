@@ -2,45 +2,143 @@ version: 2
 
 models:
   - name: stg_customer
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+    description: "Importing customer table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
+   
   - name: stg_employee_privileges
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+    description: "Importing employee privileges table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: EMPLOYEE_ID
+        tests:
+          - not_null 
+          - unique   
   - name: stg_employees
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+    description: "Importing employee table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
   - name: stg_inventory_transaction_types
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+    description: "Importing inventory transaction types table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
   - name: stg_inventory_transactions
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+    description: "Importing inventory transactions table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
   - name: stg_invoices
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+    description: "Importing invoices table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
   - name: stg_order_details
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+    description: "Importing order details table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
   - name: stg_order_details_status
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+    description: "Importing order details status table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
   - name: stg_orders
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+    description: "Importing order table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
   - name: stg_orders_status
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+    description: "Importing order status table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
   - name: stg_orders_tax_status
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
-  - name: privileges
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
-  - name: products
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
-  - name: purchase_order_details
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
-  - name: purchase_order_status
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
-  - name: purchase_orders
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
-  - name: sales_reports
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
-  - name: shippers
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
-  - name: strings
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
-  - name: suppliers
-    description: "This template will only be used to test advanced configurations like Alias, schema and database."
+    description: "Importing order tax status table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
+  - name: stg_privileges
+    description: "Importing privileges table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
+  - name: stg_products
+    description: "Importing products table from datalake to staging layer. Insertion of a timestamp, cleaning Pk to cast as integer and making sure PK as no duplicate"
+    columns:
+      - name: supplier_ids
+        tests:
+          - not_null 
+          - unique   
+  - name: stg_purchase_order_details
+    description: "Importing purchase order details table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
+  - name: stg_purchase_order_status
+    description: "Importing purchase order status details table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
+  - name: stg_purchase_orders
+    description: "Importing purchase order table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
+  - name: stg_sales_reports
+    description: "Importing sales reports table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: CUSTOMER_ID
+  - name: stg_shippers
+    description: "Importing shippers table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
+  - name: stg_strings
+    description: "Importing strings table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: STRING_ID
+        tests:
+          - not_null 
+          - unique   
+  - name: stg_suppliers
+    description: "Importing suppliers table from datalake to staging layer. Insertion of a timestamp and making sure PK as no duplicate"
+    columns:
+      - name: id
+        tests:
+          - not_null 
+          - unique   
 
 
 sources:

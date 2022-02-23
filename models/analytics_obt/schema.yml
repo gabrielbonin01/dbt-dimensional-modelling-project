@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: obt_customer_reporting
+    description: "This model contain the table fact_purchase_order,dim_customer, dim_employee and dim_poducts. refer: source_to_target_mapping(OBT)-C in WORKBOOK"
+    columns:
+      - name: CUSTOMER_ID
+        tests:
+          - not_null
+
+
+  - name: obt_product_inventory
+    description: "This model contain the table fact_inventory and dim_poducts. refer: source_to_target_mapping(OBT)-C in WORKBOOK"
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+
+
+  - name: obt_sales_overview
+    description: "This model contain the table fact_sales and ,dim_customer, dim_employee and dim_poducts. refer: source_to_target_mapping(OBT)-C in WORKBOOK"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+
+
+

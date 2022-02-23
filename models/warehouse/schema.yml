@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: "Importing data from Staging layer stg_customer, inserting timestamp and renaming Pk to customer_id.
+     Refer to source_to_target_mapping(warehouse) in WORKBOOK"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+
+  - name: dim_date
+    description: "Importing Date table from staging layer stg_date. Refer to source_to_target_mapping(warehouse) in WORKBOOK"
+
+  - name: dim_employee
+    description: "Importing data from Staging layer stg_employee, inserting timestamp and renaming Pk to employee_id. 
+    Refer to source_to_target_mapping(warehouse) in WORKBOOK"
+    columns:
+      - name: employee_id
+        tests:
+          - not_null
+
+  - name: dim_products
+    description: "Importing data from Staging layer stg_products and stg_suppliers, inserting timestamp and renaming Pk to product_id. 
+    Refer to source_to_target_mapping(warehouse) in WORKBOOK"
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+
+  - name: fact_inventory       
+    description: "Importing data from Staging layer stg_inventory, inserting timestamp and renaming Pk to inventory_id. 
+    Refer to source_to_target_mapping(warehouse) in WORKBOOK"
+    columns:
+      - name: inventory_id
+        tests:
+          - not_null
+
+  - name: fact_purchase_order      
+    description: "Importing data from Staging layer stg_purchase_orders,stg_purchase_order_details, stg_products, 
+    stg_order_details,stg_orders,stg_employees,stg_customer, inserting timestamp and renaming Pk to customer_id. 
+    Refer to source_to_target_mapping(warehouse) in WORKBOOK"
+    columns:
+      - name: customer_id
+        tests:
+          - not_null        
+
+  - name: fact_sales
+    description: "Importing data from Staging layer stg_order & stg_order_detail, inserting timestamp and renaming Pk to order_id. 
+    Refer to source_to_target_mapping(warehouse) in WORKBOOK"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
