@@ -29,7 +29,7 @@
 
 
 
-<li>Physical Implementation (Staging Layer)</li>
+<h3>Physical Implementation (Staging Layer)</h3>
 <ul>
 <li>source to Target Mapping (Source to Snowflake Data Lake)</li>
 <li>Source to Target Mapping (Snowflake Data Lake to Staging layer)</li>
@@ -48,13 +48,6 @@
 
 
 
-
-
-
-
-
-
-
 <h3>Deploying and DBT cloud</h3>
 
 
@@ -69,25 +62,3 @@
 <li><a href="https://docs.getdbt.com/docs/running-a-dbt-project/running-dbt-in-production">Scheduled jobs</a> to use dbt in production via dbt cloud</li>
 
 
-
-<h3>Advanced DBT Topics</h3>
-
-
-<li>Setting up <a href="https://docs.getdbt.com/docs/building-a-dbt-project/hooks-operations">hooks (pre-hook, post-hook)</a> and an Audit table to log all action running in deployments</li>
-
-<li>Creating <a href="https://docs.getdbt.com/docs/building-a-dbt-project/snapshots">Snapshots</a> to track changes in variables over time</li>
-
-<li> Using <a href="https://docs.getdbt.com/docs/building-a-dbt-project/using-sources">Source</a> to simplify the code and reference them in my models</li>
-
-<li>Creating multiple <a href="https://docs.getdbt.com/docs/building-a-dbt-project/jinja-macros">Macros</a> to avoid repetition and reuse code more easily</li>
-
-<li>Creating a dev and production environment to be able to separate my code if I work in a team</li>
-
-<li>Using <a href="https://docs.getdbt.com/docs/guides/best-practices#break-complex-models-up-into-smaller-pieces">Common table expressions (CTE)</a></li>
-
-<li>Using <a href="https://docs.getdbt.com/reference/resource-configs/tags">tags</a> on my models in order to use them when I schedule JOBS in dbt cloud</li>
-
-<li><a href="https://docs.getdbt.com/docs/guides/best-practices#limit-references-to-raw-data">Limited my data</a> to reduce the time of tests and runs</li>
-
-</ul>
-</ul>
