@@ -29,18 +29,18 @@
 
 
 
-<h5>Physical Implementation (Staging Layer)</h5>
+<h4>Physical Implementation (Staging Layer)</h4>
 <ul>
 <li>source to Target Mapping (Source to Snowflake Data Lake)</li>
 <li>Source to Target Mapping (Snowflake Data Lake to Staging layer)</li>
 </ul>
 
-<li>Physical Implementation (Fact and Dimension Tables) </li>
+<h4>Physical Implementation (Fact and Dimension Tables) </h4>
 <ul>
 <li>Source to Target Mapping (Staging layer to Dimension and Fact table)</li>
 </ul>
 
-<li>Physical Implementation (Analytics OBT)</li>
+<h4>Physical Implementation (Analytics OBT)</h4>
 <ul>
 <li>Source to Target Mapping (Dimension and Fact table to OBT)</li>
 </ul>
