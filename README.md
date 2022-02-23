@@ -18,8 +18,8 @@
 <ul>
 <li>Data Profiling: Playing with Tables and getting to know the DL Northwind Sample Database </li>
 <li>Creation of Workbook: Bus matrix, conceptual model, architecture design</li> 
-<li>Adding data to Workbook<li>
-<li>Creating Logical Model Design and Physical Model Design in Draw.io <li>
+<li>Adding data to Workbook</li>
+<li>Creating Logical Model Design and Physical Model Design in Draw.io </li>
 </ul>
 
 
@@ -29,7 +29,7 @@
 
 
 
-<h3>Physical Implementation (Staging Layer)</h3>
+<h5>Physical Implementation (Staging Layer)</h5>
 <ul>
 <li>source to Target Mapping (Source to Snowflake Data Lake)</li>
 <li>Source to Target Mapping (Snowflake Data Lake to Staging layer)</li>
