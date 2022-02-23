@@ -1,4 +1,5 @@
 <h1>dbt DL-Northwind dimensional modelling project</h1>
+<p></p>
 <p>In this analytics engineer project, i am working with the <a href="https://github.com/YugaByte/yugabyte-db/wiki/Northwind-Sample-Database">DL Northwind Sample Database</a>. The project involves bringing the raw data into a data lake, then moving it to a staging layer and performing data cleansing. Next, creating new dimensions in order to finish the project with OBT analysis. Here is a short summary of what I did during this project</p>
 
 <h3>Raw Data to Snowflake</h3>
@@ -17,32 +18,40 @@
 <ul>
 <li>Data Profiling: Playing with Tables and getting to know the DL Northwind Sample Database </li>
 <li>Creation of Workbook: Bus matrix, conceptual model, architecture design</li> 
-<li>Adding data to Workbook<ul>
-<li>Source to Target Mapping (Source to Snowflake Data Lake)</li>
-<li>Source to Target Mapping (Snowflake Data Lake to Staging Layer)</li>
-<li>Dimensional Model (Attributes & Measures)</li>
-<li>Source to Target Mapping (Data Lake to Data Warehouse)</li>
-<li>Source to Target Mapping (Data Lake to Data Warehouse)</li>
-</ul>
-
+<li>Adding data to Workbook<li>
+<li>Creating Logical Model Design and Physical Model Design in Draw.io <li>
 </ul>
 
 
 
-<h3>DBT</h3>
+<h3>Physical Implementation and Building dimensional data Wharehouse</h3>
 
 
-<h3>Datalake to staging Layer</h3>
 
-<li></li>
 
-<li>Testing and materializing models like: <a href="https://docs.getdbt.com/docs/building-a-dbt-project/building-models/materializations">Table, View, Incremental, Ephemeral</a></li>
+<li>Physical Implementation (Staging Layer)</li>
+<ul>
+<li>source to Target Mapping (Source to Snowflake Data Lake)</li>
+<li>Source to Target Mapping (Snowflake Data Lake to Staging layer)</li>
+</ul>
 
-<li>Creating and configured several <a href="https://docs.getdbt.com/reference/resource-properties/schema">schema</a> to better divide my models</li>
+<li>Physical Implementation (Fact and Dimension Tables) </li>
+<ul>
+<li>Source to Target Mapping (Staging layer to Dimension and Fact table)</li>
+</ul>
 
-<li>Creating <a href="https://docs.getdbt.com/docs/building-a-dbt-project/building-models/using-variables">variables</a> and used them in my models </li>
+<li>Physical Implementation (Analytics OBT)</li>
+<ul>
+<li>Source to Target Mapping (Dimension and Fact table to OBT)</li>
+</ul>
 
-<li> <a href="https://docs.getdbt.com/reference/resource-properties/tests">Tests<a> models and setting up <a href="https://docs.getdbt.com/docs/guides/writing-custom-generic-tests">custom generic tests</a><li>
+
+
+
+
+
+
+
 
 
 
