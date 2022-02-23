@@ -17,14 +17,14 @@
 <ul>
 <li>Data Profiling: Playing with Tables and getting to know the DL Northwind Sample Database </li>
 <li>Creation of Workbook: Bus matrix, conceptual model, architecture design</li> 
-<li>Adding data to Workbook</li>
+<li>Adding data to Workbook<ul>
 <li>Source to Target Mapping (Source to Snowflake Data Lake)</li>
 <li>Source to Target Mapping (Snowflake Data Lake to Staging Layer)</li>
 <li>Dimensional Model (Attributes & Measures)</li>
 <li>Source to Target Mapping (Data Lake to Data Warehouse)</li>
 <li>Source to Target Mapping (Data Lake to Data Warehouse)</li>
+</ul>
 
-as
 </ul>
 
 
