@@ -1,4 +1,4 @@
-<h1>dbt DL-Northwind dimensional modelling project</h1>
+<h1>dbt DL-Northwind Data Dimensional Modelling project</h1>
 <p></p>
 <p>In this analytics engineer project, i am working with the <a href="https://github.com/YugaByte/yugabyte-db/wiki/Northwind-Sample-Database">DL Northwind Sample Database</a>. The project involves bringing the raw data into a data lake, then moving it to a staging layer and performing data cleansing. Next, creating new dimensions in order to finish the project with OBT analysis. Here is a short summary of what I did during this project</p>
 
